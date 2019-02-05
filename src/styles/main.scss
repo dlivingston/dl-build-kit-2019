@@ -1,0 +1,33 @@
+@import 'fonts';
+
+$gallery: #EFEFEF;
+$mine-shaft: #323232;
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: $gallery;
+  color: $mine-shaft;
+}
+
+#dl-logo {
+  width: 100px;
+  height: 100px;
+  path {
+    fill: $mine-shaft;
+  }
+}
+.image-wrapper {
+  img {
+    max-width: 1000px;
+    width: calc(100vw - 16px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
