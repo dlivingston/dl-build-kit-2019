@@ -9,6 +9,10 @@
   },
   "author": "Don Livingston",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dlivingston/dl-build-kit-2019.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
