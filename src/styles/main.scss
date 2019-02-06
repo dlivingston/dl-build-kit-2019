@@ -23,11 +23,17 @@ body {
   }
 }
 .image-wrapper {
-  img {
+  img, figcaption {
     max-width: 1000px;
     width: calc(100vw - 16px);
     height: auto;
     display: block;
     margin: 0 auto;
   }
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+p {
+  margin: 0 0 1rem 0;
 }

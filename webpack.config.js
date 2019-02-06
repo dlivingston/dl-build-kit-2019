@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  // mode: "production", -- Pass this via CLI args
   entry: {
     main: ['./src/js/index.js', './src/styles/main.scss']
   },
@@ -18,7 +18,7 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       title: 'DL Build Kit 2019',
-      h2: 'Webpack based Front-End Build Kit (Incl. Babel/ES6 & Sass/SCSS)',
+      h2: 'NPM & Webpack based Front-End Build Kit (Incl. Babel/ES6 & Sass/SCSS)',
       template: 'src/index.html',
       filename: 'index.html'
     }),
@@ -28,7 +28,7 @@ module.exports = {
     })
   ],
   output: {
-    path: __dirname + "/dist",
+    path: path.resolve(__dirname, "dist"),
     filename: "js/[name].js"
   },
   devtool: "source-map",
