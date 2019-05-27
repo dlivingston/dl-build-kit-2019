@@ -11,15 +11,15 @@ html {
 }
 body {
   font-family: 'Titillium Web', sans-serif;
-  background-color: $gallery;
-  color: $mine-shaft;
+  background-color: $mine-shaft;
+  color: $gallery;
 }
 
 #dl-logo {
   width: 100px;
   height: 100px;
   path {
-    fill: $mine-shaft;
+    fill: $gallery;
   }
 }
 .image-wrapper {
@@ -36,4 +36,40 @@ body {
 }
 p {
   margin: 0 0 1rem 0;
+}
+
+#dl_logo_2019 {
+  max-width: 600px;
+  display: block;
+  margin: 50px auto;
+  .st0{fill:#0B141C;}
+  .st1{
+    fill:none;
+    stroke:#33CCFF;
+    stroke-width: 64;
+    stroke-miterlimit:10;
+    stroke-linecap: square;
+  }
+  .d-line { 
+    stroke-dasharray: 1450; 
+    stroke-dashoffset: 0; 
+    animation: dash 2s ease-out reverse;
+  }
+  .l-line { 
+    stroke-dasharray: 1200; 
+    stroke-dashoffset: 1200; 
+    animation: l-dash 2s ease-out forwards;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1450;
+  }
+}
+
+@keyframes l-dash {
+  to {
+    stroke-dashoffset: 2400;
+  }
 }
