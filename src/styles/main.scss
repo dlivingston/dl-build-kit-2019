@@ -42,10 +42,11 @@ p {
   max-width: 600px;
   display: block;
   margin: 50px auto;
+  animation: spin 5s linear;
   .st0{fill:#0B141C;}
   .st1{
     fill:none;
-    stroke:#33CCFF;
+    stroke:#FFCC33;
     stroke-width: 64;
     stroke-miterlimit:10;
     stroke-linecap: square;
@@ -53,16 +54,16 @@ p {
   .d-line { 
     stroke-dasharray: 1450; 
     stroke-dashoffset: 0; 
-    animation: dash 2s ease-out reverse;
+    animation: d-dash 2.5s ease-out reverse;
   }
   .l-line { 
     stroke-dasharray: 1200; 
     stroke-dashoffset: 1200; 
-    animation: l-dash 2s ease-out forwards;
+    animation: l-dash 2.5s ease-out forwards;
   }
 }
 
-@keyframes dash {
+@keyframes d-dash {
   to {
     stroke-dashoffset: 1450;
   }
@@ -71,5 +72,14 @@ p {
 @keyframes l-dash {
   to {
     stroke-dashoffset: 2400;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
