@@ -61,7 +61,9 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
-              incudePaths: ["src/styles"]
+              sassOptions: {
+                  incudePaths: ["src/styles"]
+              }
             }
           }
         ]
